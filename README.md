@@ -34,14 +34,9 @@ Python 3.8+
 已安裝的系統工具：Linux/macOS 需支援 SSH；Windows 主機需啟用 WinRM
 
 ✅ 安裝套件
-bash
-複製
-編輯
 pip install flask paramiko pywinrm
 ⚙️ 設定主機資訊：settings.ini
-ini
-複製
-編輯
+
 [hosts]
 host1 = 192.168.1.101, linux
 host2 = 192.168.1.102, windows
@@ -52,23 +47,15 @@ OS 必須為：linux, windows, macos
 🔐 設定帳密
 在 MonitorManager 內修改預設帳號密碼：
 
-python
-複製
-編輯
 self.default_linux_user = 'your_linux_user'
 self.default_linux_pass = 'your_linux_password'
 self.default_windows_user = 'your_windows_user'
 self.default_windows_pass = 'your_windows_password'
 ▶️ 啟動伺服器
-bash
-複製
-編輯
 python app.py
+
 開啟瀏覽器進入：
 
-arduino
-複製
-編輯
 http://localhost:5000
 📡 API 範例
 /api/status
